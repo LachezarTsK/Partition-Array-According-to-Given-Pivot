@@ -23,15 +23,12 @@ public class Solution {
         for (int n : lessThanPivot) {
             nums[index++] = n;
         }
-
         while (equalToPivot-- > 0) {
             nums[index++] = pivot;
         }
-
         for (int n : greaterThanPivot) {
             nums[index++] = n;
         }
-
         return nums;
     }
 }
